@@ -1,0 +1,14 @@
+language: go
+go:
+  - 1.12.x
+env:
+  global:
+    - GO111MODULE=ON
+deploy:
+  provider: heroku
+  app: lotus-insights
+  api_key:
+    secure: SNZhwvyzOqVsn9wmv/xnWyZVn/hkT+tw4auCD3hgcklrDAdRN/48CgMNXZyEoQbBwjHgjr6zqZEXrQfv5tp7pfeEwDvrUMXla9UqMOrJB4+qmbJMyTlN/QUvDzBNFnReUHkedO18YXgpvxez5vkjd9DCp6B0it4tXh4TQ10ozLOdqT8fEzpr+mRrKewoNh9DrbamVOJeAXaDg+mgmi84Y4D/gh33bNTfjHIS+fz0wDW2UzUHl6Suuau9/q/hjiafn/9V3n7UWXWux6Vhzx3UzzbFMA8XtO1imGpiR8GF7ctNBK/zCDOQwNleSj5KJg9ism1eJZNH+KoTf8wb/PIAKeebPpwI9COW+3sGVFidfjZfcVFRZ80XJyY+kI3XgezeK9qfzl9aKyeDZxIpUiftgILLgvfyWLvsjSOaJk31qIREtEFlzC5mSSfLY8vjv+CDzuFTNdPhS2sO97cQwwF6kuOD489HD+qHvGiEDCYB5sLd+nX0A6bYJSTeBVinrABxOkL2n+7ithp4Pv1y4KDjzjhIhnXlLWdDxbXlm02uvrczA2bYiM8rIjR+MhshcysNdw1PFr0KMtJ8OcjbA+rZRj1vkyrV5VswRSkDnXelajLRPFeyGfQ+FNPZ8lVS0iV5tZDcuRww0OIEP06Xr5F/5vQJW5H6lWjuxdA+Zuz33OM=
+  on:
+    tags: true
+    all_branches: true
